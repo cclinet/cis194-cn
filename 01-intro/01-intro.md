@@ -67,29 +67,28 @@ Haskell表达式总是指代透明的，也就是说：
 
 ## 主题
 
-Throughout this course, we will focus on three main themes.
+在整个课程中，我们将重点关注三个主要主题。
 
-Types
+### 类型
 
-Static type systems can seem annoying. In fact, in languages like C++ and Java, they are annoying. But this isn’t because static type systems per se are annoying; it’s because C++ and Java’s type systems are insufficiently expressive! This semester we’ll take a close look at Haskell’s type system, which
+静态类型系统可能看起来很烦人。事实上，在C++和Java这样的语言中，它们是令人讨厌的。但这并不是因为静态类型系统本身很烦人，而是因为C++和Java的类型系统表现力不够强本学期我们将仔细研究Haskell的类型系统，该系统
+- 有助于理清思路和表达方案结构
 
-Helps clarify thinking and express program structure
+写一个Haskell程序的第一步通常是写下所有的类型。因为Haskell的类型系统具有很强的表现力，这是一个非同寻常的设计步骤，对理清自己的程序思路有极大的帮助。
 
-The first step in writing a Haskell program is usually to write down all the types. Because Haskell’s type system is so expressive, this is a non-trivial design step and is an immense help in clarifying one’s thinking about the program.
+- 作为文件的一种形式
 
-Serves as a form of documentation
+考虑到一个富有表现力的类型系统，仅仅看一个函数的类型就可以知道这个函数可能做什么以及如何使用它，甚至在你阅读一个字的书面文档之前。
 
-Given an expressive type system, just looking at a function’s type tells you a lot about what the function might do and how it can be used, even before you have read a single word of written documentation.
+- 将运行时的错误变成编译时的错误
 
-Turns run-time errors into compile-time errors
+能够预先解决错误，要比只是大量测试并希望得到最好的结果要好得多。"如果它能编译，它就一定是正确的 "这句话大部分是开玩笑的（即使在类型正确的程序中，仍然很有可能出现逻辑错误），但它在Haskell中发生的次数比其他语言多得多。
 
-It’s much better to be able to fix errors up front than to just test a lot and hope for the best. “If it compiles, it must be correct” is mostly facetious (it’s still quite possible to have errors in logic even in a type-correct program), but it happens in Haskell much more than in other languages.
+### 抽象
 
-Abstraction
+"Don’t Repeat Yourself" 是一个在编程世界中经常听到的咒语。它也被称为 "抽象原则"，意思是没有任何东西应该被重复：每个想法、算法和数据都应该在你的代码中出现一次。把类似的代码片断，剔除它们的共同点，被称为抽象的过程。
 
-“Don’t Repeat Yourself” is a mantra often heard in the world of programming. Also known as the “Abstraction Principle”, the idea is that nothing should be duplicated: every idea, algorithm, and piece of data should occur exactly once in your code. Taking similar pieces of code and factoring out their commonality is known as the process of abstraction.
-
-Haskell is very good at abstraction: features like parametric polymorphism, higher-order functions, and type classes all aid in the fight against repetition. Our journey through Haskell this semester will in large part be a journey from the specific to the abstract.
+Haskell非常善于抽象：像参数化多态性、高阶函数和类型类这样的功能都有助于打击重复。本学期我们的哈斯克尔之旅在很大程度上将是一次从具体到抽象的旅程。
 
 Wholemeal programming
 
