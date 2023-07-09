@@ -52,5 +52,5 @@ map' :: (a -> b) -> [a] -> [b]
 map' f = foldr (\a b -> f a : b) [] 
 
 -- exercise 4
-sieveSundaram :: Integer -> [Integer]
-sieveSundaram
+-- sieveSundaram :: Integer -> [Integer]
+-- sieveSundaram
